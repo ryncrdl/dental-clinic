@@ -21,7 +21,7 @@ import slide5 from "../assets/slide-5.jpg"
 
 function Home() {
   return (
-    <section id="home">
+    <section id="home" >
       <div className="home-content content">
         <h1>Put on your Best Smile Everyday</h1>
         <p>

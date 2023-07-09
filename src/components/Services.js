@@ -11,7 +11,7 @@ import wisdom from "../assets/wisdom-tooth-extraction.jpg"
 
 function Services() {
   return (
-    <section id="services-container">
+    <section id="services">
       <h1>Our Services</h1>
       <div className="services">
         <div className="service">

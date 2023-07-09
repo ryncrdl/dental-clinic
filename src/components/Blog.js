@@ -2,7 +2,7 @@ import service1 from "../assets/service-1.jpg"
 
 const Blog = () => {
   return (
-    <section id="blog-container">
+    <section id="blogs">
       <h1>Blog</h1>
       <div className="blogs">
         <div className="blog">

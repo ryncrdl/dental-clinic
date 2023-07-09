@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Blog from "./components/Blog"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <Services />
       <Blog />
+      <About />
       <Contact />
       <Footer />
     </div>

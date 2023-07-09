@@ -129,8 +129,11 @@ header nav a:hover {
 
 /* Services */
 
-#services-container,
-#blog-container {
+#services,
+#blogs,
+#about,
+#contact,
+footer {
   padding: 4rem 4rem;
   display: flex;
   align-items: center;
@@ -138,53 +141,61 @@ header nav a:hover {
   position: relative;
   z-index: 4;
   background: var(--clr-1);
+  scroll-margin-top: 4rem;
 }
 
-#services-container h1,
-#blog-container h1 {
+#services h1,
+#blogs h1,
+#about h1,
+#contact h1 {
   color: var(--clr-3);
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-#services-container .service,
-#blog-container .blog {
+#services .service,
+#blogs .blog {
   display: flex;
   align-items: center;
   margin: 8rem 0rem;
   gap: 5rem;
 }
 
-#blog-container .blog {
+#blogs .blog {
   box-shadow: var(--shadow-1);
   background: var(--clr-1);
   margin: 4rem 0rem;
 }
 
-#blog-container .blog div {
+#blogs .blog div {
   padding: 2rem;
 }
 
-#services-container .service:nth-child(even) {
+#services .service:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-#services-container .service div h2,
-#blog-container .blog div h2 {
+#services .service div h2,
+#blogs .blog div h2 {
   color: var(--clr-3);
   font-size: 2rem;
 }
 
-#services-container .service div p,
-#blog-container .blog div p {
+#services .service div p,
+#blogs .blog div p {
   margin: 1rem 0rem;
   line-height: 2rem;
   color: var(--clr-3);
 }
 
-#services-container .service img,
-#blog-container div img {
+#services .service img,
+#blogs div img {
   width: 20rem;
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+footer {
+  background: var(--clr-3);
+  color: var(--clr-2);
 }
