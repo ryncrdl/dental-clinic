@@ -9,13 +9,25 @@ import pediatrix from "../assets/pediatrix-dentistry.jpg"
 import dentalConsultation from "../assets/dental-consultation.jpg"
 import wisdom from "../assets/wisdom-tooth-extraction.jpg"
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 function Services() {
+  AOS.init({
+    delay: 1000,
+    duration: 1000,
+
+    offset: 120,
+    mirror: false,
+    anchorPlacement: "top-bottom",
+  })
+
   return (
     <section id="services">
       <h1>Our Services</h1>
       <div className="services">
         <div className="service">
-          <div>
+          <div data-aos="fade-right">
             <h2>Tooth Extraction</h2>
             <p>
               Our skilled dentists perform tooth extractions with precision and
@@ -25,10 +37,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={toothExtraction} alt="service-img" />
+          <img src={toothExtraction} alt="service-img" data-aos="fade-left" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-left">
             <h2>Braces</h2>
             <p>
               Our orthodontic services include the application and management of
@@ -39,10 +51,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={braces} alt="service-img" />
+          <img src={braces} alt="service-img" data-aos="fade-right" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-right">
             <h2>Oral Prophylaxis</h2>
             <p>
               We offer thorough oral prophylaxis services, including
@@ -53,10 +65,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={oral} alt="service-img" />
+          <img src={oral} alt="service-img" data-aos="fade-left" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-left">
             <h2>Denture</h2>
             <p>
               Our denture services provide effective solutions for missing
@@ -67,10 +79,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={denture} alt="service-img" />
+          <img src={denture} alt="service-img" data-aos="fade-right" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-right">
             <h2>Crown and Fixed Bridge</h2>
             <p>
               Our skilled dentists specialize in crown and fixed bridge
@@ -81,10 +93,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={crown} alt="service-img" />
+          <img src={crown} alt="service-img" data-aos="fade-left" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-left">
             <h2>Root Canal Treatment</h2>
             <p>
               We provide professional root canal treatment to save and restore
@@ -94,10 +106,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={rootCanal} alt="service-img" />
+          <img src={rootCanal} alt="service-img" data-aos="fade-right" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-right">
             <h2>Tooth Filling</h2>
             <p>
               Our dental experts utilize tooth-colored fillings to treat
@@ -108,10 +120,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={toothFilling} alt="service-img" />
+          <img src={toothFilling} alt="service-img" data-aos="fade-left" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-left">
             <h2>Pediatrix Dentistry</h2>
             <p>
               Our team specializes in pediatric dentistry, catering to the
@@ -121,10 +133,10 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={pediatrix} alt="service-img" />
+          <img src={pediatrix} alt="service-img" data-aos="fade-right" />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-right">
             <h2>Dental Consultation</h2>
             <p>
               Our dental consultation services offer personalized advice and
@@ -135,10 +147,14 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={dentalConsultation} alt="service-img" />
+          <img
+            src={dentalConsultation}
+            alt="service-img"
+            data-aos="fade-left"
+          />
         </div>
         <div className="service">
-          <div>
+          <div data-aos="fade-left">
             <h2>Wisdom Tooth Extraction</h2>
             <p>
               Our experienced dentists perform wisdom tooth extractions with
@@ -149,7 +165,7 @@ function Services() {
             </p>
             <button>Book Now</button>
           </div>
-          <img src={wisdom} alt="service-img" />
+          <img src={wisdom} alt="service-img" data-aos="fade-right" />
         </div>
       </div>
     </section>
