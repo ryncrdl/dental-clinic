@@ -197,6 +197,46 @@ footer {
   object-fit: cover;
 }
 
+/* About */
+#about-container{
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+#about-container img {
+  width: 15rem;
+  aspect-ratio: 1;
+margin-left: 8rem;
+}
+
+#about-container h2 {
+  color: var(--clr-3);
+  font-size: 2rem;
+}
+
+#about-container p {
+  line-height: 2rem;
+  color: var(--clr-3);
+}
+
+#about-container span {
+  display: block;
+  color: #212121;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0rem;
+  font-weight: 700;
+}
+
+#about-container span svg {
+  color: var(--clr-5);
+}
+
+
 footer {
   background: var(--clr-3);
   color: var(--clr-2);
