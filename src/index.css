@@ -269,3 +269,28 @@ footer {
   background: var(--clr-3);
   color: var(--clr-2);
 }
+
+#footer-container{
+  display: flex;
+  margin: 2rem 0rem;
+  width:90%;
+  justify-content: space-between;
+}
+
+#footer-container div{
+  
+}
+
+#footer-container div span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 2rem;
+}
+
+
+#footer-container a {
+  text-decoration: none;
+  color: var(--clr-2);
+  display: block;
+}
