@@ -1,16 +1,15 @@
-import toothExtraction from "../assets/tooth-extraction.jpg"
-import braces from "../assets/braces.jpg"
-import oral from "../assets/oral-prophylaxis.jpg"
-import denture from "../assets/denture.jpg"
-import crown from "../assets/crown-and-fixed-bridge.jpg"
-import rootCanal from "../assets/root-canal-treatment.jpg"
-import toothFilling from "../assets/tooth-filling.jpg"
-import pediatrix from "../assets/pediatrix-dentistry.jpg"
-import dentalConsultation from "../assets/dental-consultation.jpg"
-import wisdom from "../assets/wisdom-tooth-extraction.jpg"
+import whitening from "../assets/whitening.jpg";
+import braces from "../assets/braces.jpg";
+import porcelain from "../assets/porcelain.jpg";
+import denture from "../assets/denture.jpg";
+import crown from "../assets/crown-and-fixed-bridge.jpg";
+import jacketCrown from "../assets/jacketCrown.jpg";
+import toothFilling from "../assets/tooth-filling.jpg";
+import retainer from "../assets/retainer.jpg";
+import dentalConsultation from "../assets/dental-consultation.jpg";
 
-import AOS from "aos"
-import "aos/dist/aos.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Services() {
   AOS.init({
@@ -20,7 +19,7 @@ function Services() {
     offset: 120,
     mirror: false,
     anchorPlacement: "top-bottom",
-  })
+  });
 
   return (
     <section id="services">
@@ -28,16 +27,17 @@ function Services() {
       <div className="services">
         <div className="service">
           <div data-aos="fade-right">
-            <h2>Tooth Extraction</h2>
+            <h2>Whitening</h2>
             <p>
-              Our skilled dentists perform tooth extractions with precision and
-              care, ensuring a comfortable experience. Whether it's a severely
-              decayed tooth, an impacted wisdom tooth, or any other dental issue
-              requiring extraction, we provide reliable and efficient treatment.
+              Our professional teeth whitening service is designed to brighten
+              your smile and remove stains and discoloration caused by factors
+              such as coffee, tea, tobacco, and aging. Using safe and effective
+              techniques, we can help you achieve a noticeably whiter smile,
+              enhancing your confidence and overall appearance.
             </p>
             <button>Book Now</button>
           </div>
-          <img src={toothExtraction} alt="service-img" data-aos="fade-left" />
+          <img src={whitening} alt="service-img" data-aos="fade-left" />
         </div>
         <div className="service">
           <div data-aos="fade-left">
@@ -55,21 +55,23 @@ function Services() {
         </div>
         <div className="service">
           <div data-aos="fade-right">
-            <h2>Oral Prophylaxis</h2>
+            <h2>Porcelain</h2>
             <p>
-              We offer thorough oral prophylaxis services, including
-              professional dental cleaning, to maintain optimal oral health. Our
-              skilled hygienists remove plaque, tartar, and stains, reducing the
-              risk of cavities and gum disease while leaving your teeth feeling
-              fresh and polished.
+              Our porcelain service offers high-quality dental restorations
+              using porcelain materials. Whether you need a crown, veneers,
+              inlays, or onlays, our skilled dental professionals will craft
+              custom-made porcelain restorations that match the color, shape,
+              and size of your natural teeth. Porcelain restorations provide
+              durability, aesthetics, and functionality, giving you a
+              natural-looking and long-lasting smile.
             </p>
             <button>Book Now</button>
           </div>
-          <img src={oral} alt="service-img" data-aos="fade-left" />
+          <img src={porcelain} alt="service-img" data-aos="fade-left" />
         </div>
         <div className="service">
           <div data-aos="fade-left">
-            <h2>Denture</h2>
+            <h2>Flexible Dentures</h2>
             <p>
               Our denture services provide effective solutions for missing
               teeth, restoring your smile and improving functionality. We offer
@@ -97,16 +99,19 @@ function Services() {
         </div>
         <div className="service">
           <div data-aos="fade-left">
-            <h2>Root Canal Treatment</h2>
+            <h2>Jacket Crowns</h2>
             <p>
-              We provide professional root canal treatment to save and restore
-              severely infected or damaged teeth. Our experienced endodontists
-              employ advanced techniques and modern equipment to ensure the
-              procedure is as comfortable and effective as possible.
+              Jacket crowns, also known as full-coverage crowns, are a versatile
+              dental solution to restore damaged or weakened teeth. Our jacket
+              crown service involves placing custom-made ceramic or porcelain
+              caps over the entire tooth, providing protection, strength, and
+              aesthetic improvement. With our precise craftsmanship, we can
+              create jacket crowns that blend seamlessly with your existing
+              teeth, restoring both form and function.
             </p>
             <button>Book Now</button>
           </div>
-          <img src={rootCanal} alt="service-img" data-aos="fade-right" />
+          <img src={jacketCrown} alt="service-img" data-aos="fade-right" />
         </div>
         <div className="service">
           <div data-aos="fade-right">
@@ -124,16 +129,20 @@ function Services() {
         </div>
         <div className="service">
           <div data-aos="fade-left">
-            <h2>Pediatrix Dentistry</h2>
+            <h2>Retainer</h2>
             <p>
-              Our team specializes in pediatric dentistry, catering to the
-              unique oral health needs of children. With a gentle and friendly
-              approach, we provide comprehensive dental care for kids, ensuring
-              their smiles remain healthy and bright.
+              Our retainer service aims to maintain the alignment and position
+              of your teeth after orthodontic treatment. Whether you've had
+              braces or clear aligners, wearing a retainer is crucial to prevent
+              teeth from shifting back to their original positions. We offer
+              removable and fixed retainers tailored to your needs, ensuring
+              that your beautiful smile stays intact for years to come. Our
+              expert team will guide you on proper retainer usage and care to
+              maximize its effectiveness.
             </p>
             <button>Book Now</button>
           </div>
-          <img src={pediatrix} alt="service-img" data-aos="fade-right" />
+          <img src={retainer} alt="service-img" data-aos="fade-right" />
         </div>
         <div className="service">
           <div data-aos="fade-right">
@@ -153,23 +162,9 @@ function Services() {
             data-aos="fade-left"
           />
         </div>
-        <div className="service">
-          <div data-aos="fade-left">
-            <h2>Wisdom Tooth Extraction</h2>
-            <p>
-              Our experienced dentists perform wisdom tooth extractions with
-              precision and expertise. Whether your wisdom teeth are impacted,
-              causing discomfort, or affecting the alignment of your other
-              teeth, we provide safe and effective removal to alleviate pain and
-              preserve your oral health.
-            </p>
-            <button>Book Now</button>
-          </div>
-          <img src={wisdom} alt="service-img" data-aos="fade-right" />
-        </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Services
+export default Services;
