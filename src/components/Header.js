@@ -36,7 +36,7 @@ const Header = () => {
         style={
           showNav
             ? { visibility: "visible", opacity: "1", height: "16rem" }
-            : { visibility: "hidden", opacity: "0", height: "0" }
+            : null
         }
       >
         <a href="#home" onClick={scrollToHome}>
