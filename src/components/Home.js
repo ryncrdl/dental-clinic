@@ -18,17 +18,26 @@ import slide2 from "../assets/slide-2.jpg"
 import slide3 from "../assets/slide-3.jpg"
 import slide4 from "../assets/slide-4.jpg"
 import slide5 from "../assets/slide-5.jpg"
+import useModalApp from "../utils/useModalApp"
 
 function Home() {
+  const { openDownloadApp } = useModalApp();
+
+  const onCloseDownloadApp = () => {
+    openDownloadApp(); 
+  };
+  
   return (
-    <section id="home" >
+    <section id="home">
       <div className="home-content content">
         <h1>Put on your Best Smile Everyday</h1>
         <p>
           Streamline Operations, Appointments, and Payments with our Dental
           Management System.
         </p>
-        <button className="btn-booknow-home">Book Now</button>
+        <button className="btn-booknow-home" onClick={onCloseDownloadApp}>
+          Book Now
+        </button>
       </div>
       <Swiper
         autoplay={{ delay: 3000 }}

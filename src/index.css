@@ -198,7 +198,7 @@ footer {
 }
 
 /* About */
-#about-container{
+#about-container {
   padding: 4rem;
   display: flex;
   align-items: center;
@@ -209,7 +209,7 @@ footer {
 #about-container img {
   width: 15rem;
   aspect-ratio: 1;
-margin-left: 8rem;
+  margin-left: 8rem;
 }
 
 #about-container h2 {
@@ -236,7 +236,6 @@ margin-left: 8rem;
   color: var(--clr-5);
 }
 
-
 #contact-container {
   box-shadow: var(--shadow-1);
   background: var(--clr-1);
@@ -248,21 +247,21 @@ margin-left: 8rem;
   width: 50%;
 }
 
-
 #contact-container .field-container {
   display: flex;
   flex-direction: column;
   color: var(--clr-3);
 }
 
-#contact-container .field-container input, #contact-container .field-container textarea  {
+#contact-container .field-container input,
+#contact-container .field-container textarea {
   padding: 0.5rem 1rem;
   outline: none;
 }
 
 #contact-container .field-container textarea {
   resize: none;
- height: 10rem;
+  height: 10rem;
 }
 
 footer {
@@ -270,10 +269,10 @@ footer {
   color: var(--clr-2);
 }
 
-#footer-container{
+#footer-container {
   display: flex;
   margin: 2rem 0rem;
-  width:90%;
+  width: 90%;
   justify-content: space-between;
 }
 
@@ -283,7 +282,6 @@ footer {
   gap: 0.5rem;
   line-height: 2rem;
 }
-
 
 #footer-container a {
   text-decoration: none;
@@ -302,16 +300,50 @@ footer {
 }
 
 #nav-desktop {
-  visibility:visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
-@media  only screen  and (max-width: 990px){
+#download-app {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0, 0, 0, 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+.download-app-container {
+  max-width: 25rem;
+  background: var(--clr-2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.download-app-container p {
+  color: var(--clr-3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 990px) {
   #nav-desktop {
     position: absolute;
     right: 4rem;
     top: 5rem;
-    visibility:hidden;
+    visibility: hidden;
     opacity: 0;
     height: 0;
     background: var(--clr-1);
