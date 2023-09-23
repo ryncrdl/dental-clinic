@@ -1,3 +1,5 @@
+import apkAndriod from "../apk/dentalapp.apk"
+
 const DownloadApp = () => {
   window.onclick = (e) => {
     const downloadApp = document.getElementById("download-app")
@@ -5,23 +7,14 @@ const DownloadApp = () => {
       downloadApp.style.display = "none"
     }
   }
-  const onDownloadAndriodApp = () => {
-    const link =
-      "https://drive.google.com/uc?export=download&id=1R3uBCSRO5kImyLZ-dXjLAYssoQPz8I2K"
-    window.open(link, "_blank")
-  }
-
   return (
     <section id="download-app">
       <div className="download-app-container">
-        <p>
-          Download the app, register or log in, and click the button below based
-          on your phone.
-        </p>
-        <button id="btn-andriod" onClick={() => onDownloadAndriodApp()}>
-          Dental App For Andriod
-        </button>
-        <button id="btn-ios">Dental App For IOS</button>
+        <p>For Booking, Download mobile app below.</p>
+        <a href={apkAndriod} download="dentalapp.apk">
+          <button id="btn-andriod">For Android</button>
+        </a>
+        <button id="btn-ios">For IOS</button>
       </div>
     </section>
   )

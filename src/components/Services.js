@@ -1,17 +1,24 @@
-import whitening from "../assets/whitening.jpg";
-import braces from "../assets/braces.jpg";
-import porcelain from "../assets/porcelain.jpg";
-import denture from "../assets/denture.jpg";
-import crown from "../assets/crown-and-fixed-bridge.jpg";
-import jacketCrown from "../assets/jacketCrown.jpg";
-import toothFilling from "../assets/tooth-filling.jpg";
-import retainer from "../assets/retainer.jpg";
-import dentalConsultation from "../assets/dental-consultation.jpg";
+import whitening from "../assets/whitening.jpg"
+import braces from "../assets/braces.jpg"
+import porcelain from "../assets/porcelain.jpg"
+import denture from "../assets/denture.jpg"
+import crown from "../assets/crown-and-fixed-bridge.jpg"
+import jacketCrown from "../assets/jacketCrown.jpg"
+import toothFilling from "../assets/tooth-filling.jpg"
+import retainer from "../assets/retainer.jpg"
+import dentalConsultation from "../assets/dental-consultation.jpg"
+import useModalApp from "../utils/useModalApp"
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function Services() {
+  const { openDownloadApp } = useModalApp()
+
+  const onOpenDownloadApp = () => {
+    openDownloadApp()
+  }
+
   AOS.init({
     delay: 1000,
     duration: 1000,
@@ -19,7 +26,7 @@ function Services() {
     offset: 120,
     mirror: false,
     anchorPlacement: "top-bottom",
-  });
+  })
 
   return (
     <section id="services">
@@ -35,7 +42,7 @@ function Services() {
               techniques, we can help you achieve a noticeably whiter smile,
               enhancing your confidence and overall appearance.
             </p>
-            <button>Book Now</button>
+            <button onClick={onOpenDownloadApp}>Book Now</button>
           </div>
           <img src={whitening} alt="service-img" data-aos="fade-left" />
         </div>
@@ -164,7 +171,7 @@ function Services() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Services;
+export default Services

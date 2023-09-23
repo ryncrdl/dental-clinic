@@ -1,37 +1,19 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faMapMarker } from "@fortawesome/free-solid-svg-icons";
-
 const Footer = () => {
   return (
     <footer>
       <div id="footer-container">
         <div>
-          <h2>Contact info</h2>
-          <span>
-            <FontAwesomeIcon icon={faMapMarker} />
-            Kasiglahan Blk 10, Lot 1A, Phase 1B San Jose, Rodriguez, Rizal
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faPhone} />
-            0917 846 1563
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faPhone} />
-            0921 719 9438
-          </span>
+          <h2>Dental Clinic</h2>
+          <p>
+            In today's fast-paced world, technology continues to revolutionize
+            various industries, and healthcare is no exception. Dentistry, a
+            critical aspect of healthcare, has also seen significant
+            advancements in the form of dental applications. These innovative
+            tools not only improve the overall patient experience but also
+            streamline the workflow for dental professionals.
+          </p>
         </div>
-        <div>
-          <h2>Services</h2>
-          <a href="#">Whitening</a>
-          <a href="#">Braces</a>
-          <a href="#">Porcelain</a>
-          <a href="#">Flexible Dentures</a>
-          <a href="#">Crown and Fixed Bridge</a>
-          <a href="#">Jacket Crowns</a>
-          <a href="#">Tooth Filling</a>
-          <a href="#">Retainer</a>
-          <a href="#">Dental Consultation</a>
-        </div>
+
         <div>
           <h2>Links</h2>
           <a href="#home">Home</a>
@@ -42,7 +24,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

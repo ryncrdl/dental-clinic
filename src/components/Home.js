@@ -21,12 +21,12 @@ import slide5 from "../assets/slide-5.jpg"
 import useModalApp from "../utils/useModalApp"
 
 function Home() {
-  const { openDownloadApp } = useModalApp();
+  const { openDownloadApp } = useModalApp()
 
-  const onCloseDownloadApp = () => {
-    openDownloadApp(); 
-  };
-  
+  const onOpenDownloadApp = () => {
+    openDownloadApp()
+  }
+
   return (
     <section id="home">
       <div className="home-content content">
@@ -35,7 +35,7 @@ function Home() {
           Streamline Operations, Appointments, and Payments with our Dental
           Management System.
         </p>
-        <button className="btn-booknow-home" onClick={onCloseDownloadApp}>
+        <button className="btn-booknow-home" onClick={onOpenDownloadApp}>
           Book Now
         </button>
       </div>
