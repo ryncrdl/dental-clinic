@@ -75,7 +75,7 @@ header nav a:hover {
 #home {
   max-height: calc(100vh - 7rem);
   height: 100vh;
-  position: sticky;
+  position: relative;
   z-index: 0;
   top: 0;
 }
