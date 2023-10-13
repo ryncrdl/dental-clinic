@@ -103,3 +103,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 450px) {
+  #contact-container {
+    min-width: 100%;
+  }
+
+  body {
+    min-width: 360px;
+  }
+}
