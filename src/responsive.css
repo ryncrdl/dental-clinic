@@ -112,4 +112,16 @@
   body {
     min-width: 360px;
   }
+
+  .home-content h1 {
+    width: auto !important;
+    white-space: wrap;
+  }
+  .home-content p {
+    display: none;
+  }
+
+  .home-content {
+    width: 15rem;
+  }
 }

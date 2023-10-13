@@ -73,7 +73,8 @@ header nav a:hover {
 }
 
 #home {
-  height: 88vh;
+  max-height: calc(100vh - 7rem);
+  height: 100vh;
   position: sticky;
   z-index: 0;
   top: 0;
@@ -100,8 +101,8 @@ header nav a:hover {
 
 .home-content h1 {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
-  white-space: nowrap;
   color: var(--clr-1);
+  width: max-content;
 }
 
 .home-content p {
