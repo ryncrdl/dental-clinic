@@ -12,6 +12,7 @@ const Header = () => {
   }
 
   window.onscroll = () => {
+    setClose(false)
     if (window.scrollY > 0) {
       setScroll(true)
     } else {
