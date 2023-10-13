@@ -34,10 +34,14 @@
     animation: spinOpenNav 0.5s ease-in-out forwards;
   }
 
+  header {
+    overflow: visible;
+  }
+
   #nav-desktop {
     padding: 2rem;
     position: fixed;
-    right: -100%;
+    right: -100vw;
     top: 0;
     bottom: 0;
     width: 40vw;
@@ -87,7 +91,7 @@
 
   @keyframes spinOpenNav {
     0% {
-      right: -100%;
+      right: -100vw;
     }
     100% {
       right: 0;
@@ -99,7 +103,7 @@
       right: 0;
     }
     100% {
-      right: -100%;
+      right: -100vw;
     }
   }
 }
