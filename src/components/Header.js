@@ -75,11 +75,11 @@ const Header = () => {
       <header
         style={
           scroll
-            ? { padding: "clamp(0.5rem, 4vw, 1rem) clamp(2rem, 4vw, 4rem)" }
+            ? { padding: "clamp(0.5rem, 4vw, 1rem) clamp(1rem, 4vw, 2rem)" }
             : null
         }
       >
-        <a href="#home" id="logo" onClick={onOpenNavigation}>
+        <a href="#home" id="logo" onClick={scrollToHome}>
           <img src={logo} alt="Logo" />
         </a>
         <button id="btn-nav" onClick={onOpenNavigation}>
