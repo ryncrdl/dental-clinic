@@ -19,6 +19,26 @@
   --transition-1: all 0.5s ease;
 }
 
+body {
+  background: var(--clr-1);
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.App {
+  position: relative;
+}
+
+button {
+  background: var(--clr-4);
+  padding: 1rem 2rem;
+  color: var(--clr-2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 #res-nav {
   padding: 2rem;
   position: fixed;
@@ -33,23 +53,6 @@
   background: #fff;
   z-index: 13;
 }
-
-body {
-  background: var(--clr-1);
-  scroll-behavior: smooth;
-  position: relative;
-  overflow-x: hidden;
-}
-
-button {
-  background: var(--clr-4);
-  padding: 1rem 2rem;
-  color: var(--clr-2);
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 header {
   display: flex;
   justify-content: space-between;
