@@ -10,7 +10,7 @@ const Blog = () => {
   })
 
   return (
-    <section id="blogs">
+    <section id="blogs-container">
       <h1>Blog</h1>
       <div className="blogs">
         <div className="blog" data-aos="fade-left">

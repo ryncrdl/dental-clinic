@@ -39,7 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: clamp(1rem, 4vw, 2rem) clamp(2rem, 4vw, 4rem);
   position: sticky;
   z-index: 10;
   top: 0;
@@ -80,7 +80,7 @@ header nav a:hover {
 }
 
 .btn-booknow-home {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 4vw, 1rem);
   margin: 1rem;
 }
 
@@ -99,12 +99,13 @@ header nav a:hover {
 }
 
 .home-content h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   white-space: nowrap;
   color: var(--clr-1);
 }
 
 .home-content p {
+  font-size: clamp(0.8rem, 4vw, 1rem);
   color: var(--clr-1);
 }
 
@@ -131,12 +132,12 @@ header nav a:hover {
 
 /* Services */
 
-#services,
-#blogs,
+#services-container,
+#blogs-container,
 #about,
 #contact,
 footer {
-  padding: 4rem 4rem;
+  padding: clamp(2rem, 4vw, 4rem);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -146,63 +147,54 @@ footer {
   scroll-margin-top: 4rem;
 }
 
-#services h1,
-#blogs h1,
+#services-container h1,
+#blogs-container h1,
 #about h1,
 #contact h1 {
   color: var(--clr-3);
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
 }
 
-#services .service,
-#blogs .blog {
+.services .service,
+.blogs .blog {
   display: flex;
   align-items: center;
-  margin: 8rem 0rem;
+  margin: clamp(6rem, 4vw, 8rem) 0rem;
   gap: 5rem;
 }
 
-#blogs .blog {
+.blogs .blog {
   background: var(--clr-1);
-  margin: 4rem 0rem;
+  margin: clamp(2rem, 4vw, rem) 0rem;
 }
 
-#blogs .blog div {
-  padding: 2rem;
-}
-
-#services .service:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-#services .service div h2,
-#blogs .blog div h2 {
+.services .service div h2,
+.blogs .blog div h2 {
   color: var(--clr-3);
-  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
-#services .service div p,
-#blogs .blog div p {
+.services .service div p,
+.blogs .blog div p {
   margin: 1rem 0rem;
   line-height: 2rem;
   color: var(--clr-3);
 }
 
-#services .service img,
-#blogs div img {
+.services .service img,
+.blogs div img {
   width: 20rem;
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-#blogs div img {
+.blogs div img {
   height: 100%;
 }
 
 /* About */
 #about-container {
-  padding: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -211,7 +203,8 @@ footer {
 
 #about-container h2 {
   color: var(--clr-3);
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-top: 1rem;
 }
 
 #about-container p {
@@ -236,7 +229,7 @@ footer {
 #contact-container {
   box-shadow: var(--shadow-1);
   background: var(--clr-1);
-  margin: 4rem 0rem;
+  margin: clamp(2rem, 4vw, 4rem) 0rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -287,21 +280,6 @@ footer {
   text-decoration: none;
   color: var(--clr-2);
   display: block;
-}
-
-#btn-nav {
-  display: none;
-  background: none;
-  color: var(--clr-5);
-  padding: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-  transition: var(--transition-1);
-}
-
-#nav-desktop {
-  visibility: visible;
-  opacity: 1;
 }
 
 #download-app {
