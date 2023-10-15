@@ -47,8 +47,8 @@ const Header = () => {
       <a href="#services-container" onClick={onCloseNavigation}>
         Services
       </a>
-      <a href="#blogs-container" onClick={onCloseNavigation}>
-        Blogs
+      <a href="#announcements-container" onClick={onCloseNavigation}>
+        Announcements
       </a>
       <a href="#about" onClick={onCloseNavigation}>
         About

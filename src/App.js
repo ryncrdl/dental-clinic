@@ -1,5 +1,5 @@
 import About from "./components/About"
-import Blog from "./components/Blog"
+import Announcements from "./components/Announcements"
 import Contact from "./components/Contact"
 import DownloadApp from "./components/DownloadApp"
 import Footer from "./components/Footer"
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Home />
       <Services />
-      <Blog />
+      <Announcements />
       <About />
       <Contact />
       <Footer />

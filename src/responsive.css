@@ -43,12 +43,12 @@
   }
 
   .services .service,
-  .blogs .blog,
+  .announcements .announcement,
   .services {
     flex-direction: column-reverse;
   }
 
-  .blogs .blog {
+  .announcements .announcement {
     gap: 0.5rem;
   }
 

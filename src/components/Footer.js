@@ -18,7 +18,7 @@ const Footer = () => {
           <h2>Links</h2>
           <a href="#home">Home</a>
           <a href="#services">Services</a>
-          <a href="#blogs">Blog</a>
+          <a href="#announcements">announcement</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>

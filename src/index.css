@@ -157,7 +157,7 @@ header nav a:hover,
 /* Services */
 
 #services-container,
-#blogs-container,
+#announcements-container,
 #about,
 #contact,
 footer {
@@ -172,7 +172,7 @@ footer {
 }
 
 #services-container h1,
-#blogs-container h1,
+#announcements-container h1,
 #about h1,
 #contact h1 {
   color: var(--clr-3);
@@ -181,39 +181,39 @@ footer {
 }
 
 .services .service,
-.blogs .blog {
+.announcements .announcement {
   display: flex;
   align-items: center;
   margin: clamp(6rem, 4vw, 8rem) 0rem;
   gap: 5rem;
 }
 
-.blogs .blog {
+.announcements .announcement {
   background: var(--clr-1);
   margin: clamp(2rem, 4vw, rem) 0rem;
 }
 
 .services .service div h2,
-.blogs .blog div h2 {
+.announcements .announcement div h2 {
   color: var(--clr-3);
   font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 .services .service div p,
-.blogs .blog div p {
+.announcements .announcement div p {
   margin: 1rem 0rem;
   line-height: 2rem;
   color: var(--clr-3);
 }
 
 .services .service img,
-.blogs div img {
+.announcements div img {
   width: 20rem;
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-.blogs div img {
+.announcements div img {
   height: 100%;
 }
 
